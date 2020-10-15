@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-   <img alt="AXIS logo" src="./assets/axis-fitness-logo.png"> 
+  
     <Home msg="Welcome to Your Vue.js App"/>
-    <button class="button is-primary"> This is button</button>
+    
   </div>
 </template>
 
@@ -19,4 +19,9 @@ export default {
 
 <style>
 @import "~bulma/css/bulma.css";
+#app{
+  width: auto;
+  margin: auto;
+}
 </style>
+ 
