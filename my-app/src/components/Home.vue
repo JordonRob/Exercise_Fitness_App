@@ -60,4 +60,6 @@ a {
   color:white;
   font-size: 20px;
 }
+
+@import "~bulma/css/bulma.css";
 </style>

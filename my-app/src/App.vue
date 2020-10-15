@@ -2,6 +2,7 @@
   <div id="app">
    <img alt="AXIS logo" src="./assets/axis-fitness-logo.png"> 
     <Home msg="Welcome to Your Vue.js App"/>
+    <button class="button is-primary"> This is button</button>
   </div>
 </template>
 
@@ -17,17 +18,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-#app img{
-  width:50%;
-  height: 50%;
-}
+@import "~bulma/css/bulma.css";
 </style>
