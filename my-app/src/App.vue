@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-  
     <Home msg="Welcome to Your Vue.js App"/>
+    <img class="bg-img" alt="AXIS logo" src="./assets/axis-fitness-logo.png"> 
     
   </div>
 </template>
@@ -19,9 +19,17 @@ export default {
 
 <style>
 @import "~bulma/css/bulma.css";
-#app{
-  width: auto;
-  margin: auto;
+html,body{
+margin: 0;
+height: 100;
+}
+
+.bg-img{
+  display: block ;
+  width: auto; height: auto;
+  object-fit:fill;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
  

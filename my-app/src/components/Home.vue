@@ -8,11 +8,24 @@
     </a>
 
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
+      <span aria-hidden="true"> </span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
+  
+  <div class="navbar-menu">
+    <div class="navbar-start">
+    <a class="navbar-item">
+  Home
+</a>
+  </div>
+
+  <div class="navbar-end">
+    <!-- navbar items -->
+  </div>
+  </div>
+
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
@@ -21,7 +34,7 @@
       </a>
 
       <a class="navbar-item">
-        Documentation
+        Tracker
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
@@ -34,10 +47,10 @@
             About
           </a>
           <a class="navbar-item">
-            Jobs
+            Nutrition
           </a>
           <a class="navbar-item">
-            Contact
+            Daily
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item">
@@ -61,9 +74,42 @@
     </div>
   </div>
 </nav>
-<div class="bg-img"></div>
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-5760by3840">
+      <img src="https://www.linkpicture.com/q/yoga.jpg" alt="image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      
+      <div class="media-content">
+        <p class="title is-4">Exercise</p>
+        <p class="subtitle is-6">Burn calories even faster  </p>
+      </div>
+    </div>
+  </div>
 </div>
 
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-16by9">
+      <img src="https://i.ibb.co/tMV5Q94/nutrition2.jpg" alt="nutrition2" border="0">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      
+      <div class="media-content">
+        <p class="title is-4">Nutrition/Diet</p>
+        <p class="subtitle is-6">Start here. Delicious meal plans to help burn calories fast</p>
+      </div>
+    </div>
+   
+  </div>
+</div>
+
+</div>
 </template>
 
 
@@ -75,6 +121,36 @@ export default {
     msg: String
   }
 }
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -110,16 +186,9 @@ a {
 }
 .head-logo{
   color: black;
+  font-family: Arial black, Helvetica, sans-serif;
 }
-.bg-img { 
-        background-image: url(axis-fitness-logo.png) ;
-        background-position: center center;
-        background-repeat:  no-repeat;
-        background-attachment: fixed;
-        background-size:  cover;
-        background-color: #999;
 
- }
 
 
 @import "~bulma/css/bulma.css";
