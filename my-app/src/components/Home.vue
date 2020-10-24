@@ -66,7 +66,7 @@
           <a class="button is-primary">
             <strong>Sign up</strong>
           </a>
-          <a class="button is-light">
+          <a class="button is-light" href="C:\Users\Swagg\Documents\New Paltz\Web Programming 493\Exercise_Fitness_App\my-app\src\components\Login.vue">
             Log in
           </a>
         </div>
@@ -77,7 +77,7 @@
 <div class="card">
   <div class="card-image">
     <figure class="image is-5760by3840">
-      <img src="https://www.linkpicture.com/q/yoga.jpg" alt="image">
+      <img src="https://i.ibb.co/52xLL0j/yoga.jpg" alt="yoga" border="0">
     </figure>
   </div>
   <div class="card-content">

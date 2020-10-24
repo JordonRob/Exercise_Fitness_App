@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <Home msg="Welcome to Your Vue.js App"/>
+    <Home/>
     <img class="bg-img" alt="AXIS logo" src="./assets/axis-fitness-logo.png"> 
-    
+    <router-view/>
   </div>
+ 
 </template>
 
 <script>
