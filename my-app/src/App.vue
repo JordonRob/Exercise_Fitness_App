@@ -19,9 +19,9 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-     <router-link to="/"> <a class="navbar-item">
-        Home
-      </a></router-link>
+     <a class="navbar-item"><router-link to="/"> 
+        Home</router-link>
+      </a>
 
       <a class="navbar-item">
         Tracker
