@@ -56,13 +56,22 @@
       <!-- Check that the SDK client is not currently loading before accessing is methods -->
       <div v-if="!$auth.loading">
         <!-- show login when not authenticated -->
-        <a v-if="!$auth.isAuthenticated" @click="login" class="button is-dark"><strong>Sign in</strong></a>
+        <a v-if="!$auth.isAuthenticated" @click="login" class="button is-success"><strong>Log in</strong></a>
         <!-- show logout when authenticated -->
-        <a v-if="$auth.isAuthenticated" @click="logout" class="button is-dark"><strong>Log out</strong></a>
+        <a v-if="$auth.isAuthenticated" @click="logout" class="button is-danger"><strong>Log out</strong></a>
       </div>
     </div>
   </div>
+  <div class="buttons">
+  <button v-if="!$auth.isAuthenticated" @click="login" class="button is-xl is-primary">Sign Up to Browse Events</button>
+  <h1 v-if="$auth.isAuthenticated" class="is-size-2 has-background-white welcome">{{ $auth.user.name }}</h1>
 </div>
+</div>
+
+
+
+
+
   </div>
 </nav>
     
