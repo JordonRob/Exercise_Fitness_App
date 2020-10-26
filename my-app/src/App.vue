@@ -33,8 +33,8 @@
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
+          <a class="navbar-item"><router-link to="/about">
+            About</router-link>
           </a>
           <a class="navbar-item">
             Nutrition
