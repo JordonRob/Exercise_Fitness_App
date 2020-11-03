@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../components/Home.vue'
 import Login from '../components/Login.vue'
 import About from '../components/About.vue'
+import Tracker from'../components/Tracker.vue'
 import { authGuard } from "../auth/authGuard";
 
 Vue.use(VueRouter)
@@ -22,6 +23,12 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About,
+    beforeEnter: authGuard
+  },
+  {
+    path: '/tracker',
+    name: 'Tracker',
+    component: Tracker,
     beforeEnter: authGuard
   },
   {

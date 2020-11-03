@@ -23,8 +23,8 @@
         Home</router-link>
       </a>
 
-      <a class="navbar-item">
-        Tracker
+      <a class="navbar-item"><router-link to="/tracker">
+        Tracker</router-link>
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">

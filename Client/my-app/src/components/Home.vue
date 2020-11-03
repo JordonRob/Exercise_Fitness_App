@@ -1,39 +1,39 @@
 <template>
 <div class="main">
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-5760by3840">
-      <img src="https://i.ibb.co/52xLL0j/yoga.jpg" alt="yoga" border="0">
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
+  <div class="card">
+   <div class="card-image">
+     <figure class="image is-5760by3840">
+        <img src="https://i.ibb.co/52xLL0j/yoga.jpg" alt="yoga" border="0">
+      </figure>
+   </div>
+   <div class="card-content">
+      <div class="media">
       
-      <div class="media-content">
-        <p class="title is-4">Exercise</p>
-        <p class="subtitle is-6">Burn calories even faster  </p>
-      </div>
+        <div class="media-content">
+         <p class="title is-4">Exercise</p>
+          <p class="subtitle is-6">Burn calories even faster  </p>
+        </div>
+     </div>
     </div>
   </div>
-</div>
 
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-16by9">
-      <img src="https://i.ibb.co/tMV5Q94/nutrition2.jpg" alt="nutrition2" border="0">
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-      
-      <div class="media-content">
-        <p class="title is-4">Nutrition/Diet</p>
-        <p class="subtitle is-6">Start here. Delicious meal plans to help burn calories fast</p>
+  <div class="card">
+   <div class="card-image">
+     <figure class="image is-16by9">
+       <img src="https://i.ibb.co/tMV5Q94/nutrition2.jpg" alt="nutrition2" border="0">
+      </figure>
+   </div>
+   <div class="card-content">
+      <div class="media">
+        
+        <div class="media-content">
+          <p class="title is-4">Nutrition/Diet</p>
+          <p class="subtitle is-6">Start here. Delicious meal plans to help burn calories fast</p>
+        </div>
       </div>
-    </div>
    
+    </div>
   </div>
-</div>
 
 </div>
 </template>

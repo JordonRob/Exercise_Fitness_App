@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import 'bulma/css/bulma.css';
+import "@/plugins/echarts";
 
 // Import the Auth0 configuration
 import { domain, clientId } from "../auth_config.json";
