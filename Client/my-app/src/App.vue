@@ -24,7 +24,7 @@
       </a>
 
       <a class="navbar-item"><router-link to="/tracker">
-        Tracker</router-link>
+        Dashboard</router-link>
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
@@ -36,11 +36,11 @@
           <a class="navbar-item"><router-link to="/about">
             About</router-link>
           </a>
-          <a class="navbar-item">
-            Nutrition
+          <a class="navbar-item"><router-link to="/nutrition">
+            Nutrition</router-link>
           </a>
-          <a class="navbar-item">
-            Daily
+          <a class="navbar-item"><router-link to="/exercise">
+            Exercise</router-link>
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item">

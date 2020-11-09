@@ -5,62 +5,16 @@
 
 
 
-    <div class="container">
+    <div class="container is-widescreen">
         <div class="columns">
-            <div class="column is-3 ">
-                <aside class="menu is-hidden-mobile">
-                    <p class="menu-label">
-                        General
-                    </p>
-                    <ul class="menu-list">
-                        <li><a class="is-active">Dashboard</a></li>
-                        <li><a>Customers</a></li>
-                        <li><a>Other</a></li>
-                    </ul>
-                    <p class="menu-label">
-                        Administration
-                    </p>
-                    <ul class="menu-list">
-                        <li><a>Team Settings</a></li>
-                        <li>
-                            <a>Manage Your Team</a>
-                            <ul>
-                                <li><a>Members</a></li>
-                                <li><a>Plugins</a></li>
-                                <li><a>Add a member</a></li>
-                                <li><a>Remove a member</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Invitations</a></li>
-                        <li><a>Cloud Storage Environment Settings</a></li>
-                        <li><a>Authentication</a></li>
-                        <li><a>Payments</a></li>
-                    </ul>
-                    <p class="menu-label">
-                        Transactions
-                    </p>
-                    <ul class="menu-list">
-                        <li><a>Payments</a></li>
-                        <li><a>Transfers</a></li>
-                        <li><a>Balance</a></li>
-                        <li><a>Reports</a></li>
-                    </ul>
-                </aside>
-            </div>
+           
             <div class="column is-9">
-                <nav class="breadcrumb" aria-label="breadcrumbs">
-                    <ul>
-                        <li><a href="../">Bulma</a></li>
-                        <li><a href="../">Templates</a></li>
-                        <li><a href="../">Examples</a></li>
-                        <li class="is-active"><a href="#" aria-current="page">Admin</a></li>
-                    </ul>
-                </nav>
+                
                 <section class="hero is-info welcome is-small">
                     <div class="hero-body">
-                        <div class="container">
+                        <div class="container is-widescreen">
                             <h1 class="title">
-                                Hello, Admin.
+                                Hello, {{ $auth.user.name }}.
                             </h1>
                             <h2 class="subtitle">
                                 I hope you are having a great day!
@@ -72,26 +26,26 @@
                     <div class="tile is-ancestor has-text-centered">
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <p class="title">439k</p>
-                                <p class="subtitle">Users</p>
+                                <p class="title">500</p>
+                                <p class="subtitle">Calories burnt</p>
                             </article>
                         </div>
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <p class="title">59k</p>
-                                <p class="subtitle">Products</p>
+                                <p class="title">2000</p>
+                                <p class="subtitle">gained</p>
                             </article>
                         </div>
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <p class="title">3.4k</p>
-                                <p class="subtitle">Open Orders</p>
+                                <p class="title">200</p>
+                                <p class="subtitle">Goals</p>
                             </article>
                         </div>
                         <div class="tile is-parent">
                             <article class="tile is-child box">
                                 <p class="title">19</p>
-                                <p class="subtitle">Exceptions</p>
+                                <p class="subtitle">Total Hours Exercise</p>
                             </article>
                         </div>
                     </div>
@@ -149,15 +103,15 @@
                                     User Search
                                 </p>
                                 <a href="#" class="card-header-icon" aria-label="more options">
-                  <span class="icon">
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </span>
+                        <span class="icon">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
                 </a>
                             </header>
                             <div class="card-content">
                                 <div class="content">
                                     <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-large" type="text" placeholder="">
+                                        <input class="input is-large" type="text" placeholder="placeholder">
                                         <span class="icon is-medium is-left">
                       <i class="fa fa-search"></i>
                     </span>
@@ -181,7 +135,7 @@ export default {
      data: () => ({
     chartOptionsBar: {
          xAxis: {
-    data: ['3 Days ago', '2 Days ago', 'Yesterday', ]
+    data: ['3 Days ago', '2 Days ago', 'Yesterday', 'Today' ]
   },
   yAxis: {
     type: 'value'
@@ -189,7 +143,7 @@ export default {
    series: [
     {
       type: 'bar',
-      data: [63, 75, 24, 9]
+      data: [63, 275, 24, -10]
     }
   ]
     }
@@ -198,5 +152,7 @@ export default {
 </script>
 
 <style scoped>
+
+
 @import "~bulma/css/bulma.css";
 </style>
